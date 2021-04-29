@@ -1,0 +1,33 @@
+{
+  "name": "My Authenticated XHR Extension",
+  "description": "Play with API-backed extensions",
+  "version": "1.0",
+  "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvEGDD7PtZ3j4ALIN+luCYHSQ5MN6OXDToNZP0SelA291sQPxoeAlOuVtqNEVlb1kh8KklmHOAZbaGBDPr7bqlORhMJ4Mm96gFIR7J6BY3+aDaikgTFnGZIa1vzCG0HyEOcbXn25DYAorK6GRnP/pAdd1FO1a49v4fESxi7QnKPwk30xgJvqUQGCqKfFB3FPRTKFmtQKWrXDBpLW+0iNXc391g7LMtdozD+oYJ0ZdYOEQKHGAKaABjZCM3qGR49qUL21URJkdvRSS79B0NlJwlb7n2AvoU5stIU6c1sMS7kUe7MLju6XigesmDUrY8oJmgjnoWJ8BivvfVSwuE0oCeQIDAQAB",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "/html/popup.html",
+    "default_icon": {
+      "16": "/images/get_started16.png",
+      "32": "/images/get_started32.png",
+      "48": "/images/get_started48.png",
+      "128": "/images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/get_started16.png",
+    "32": "/images/get_started32.png",
+    "48": "/images/get_started48.png",
+    "128": "/images/get_started128.png"
+  },
+  "host_permissions": [
+    "https://fastapi-auth-demo-app-mrbe4zqmdq-uw.a.run.app/",
+    "https://fastapi-graphql-auth-demo-mrbe4zqmdq-uw.a.run.app/"
+  ],
+  "permissions": [
+    "storage",
+    "identity"
+  ]
+}
